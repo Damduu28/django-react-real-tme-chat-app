@@ -142,7 +142,7 @@ const Register = () => {
                 type={!toggleEye1 ? "password" : "text"}
                 placeholder="Password"
                 {...register("password", {
-                  required: "Please enter your account password.!!!",
+                  required: "Please enter your account password.",
                   validate: {
                     lessthan8char: (fieldValue) => {
                       return (

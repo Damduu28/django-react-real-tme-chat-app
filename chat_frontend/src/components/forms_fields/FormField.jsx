@@ -9,7 +9,7 @@ const FormField = ({ title, name, type, holder, register, isPwd }) => {
         type={type}
         placeholder={holder}
         {...register(`${name}`, {
-          required: `${title} field is required.!!!`,
+          required: `Please enter your ${title}.`,
         })}
       />
       {isPwd && <i className="fas fa-eye"></i>}
