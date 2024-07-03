@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+.env
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# Django stuff:
+*.sqlite3
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Static files
+/static/
+# Uncomment the next line if you don't want to track staticfiles directory created by collectstatic command
+# /staticfiles/
+
+# Media files
+/media/
+
+# Local settings
+.local_settings.py
+
+# Vercel deployment
+.vercel/
+.vercel_build_output/
+
+# Other
+.DS_Store
