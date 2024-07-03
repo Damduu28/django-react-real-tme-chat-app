@@ -118,7 +118,7 @@ const Register = () => {
                 type="email"
                 placeholder="Email"
                 {...register("email", {
-                  required: "Email field is required.",
+                  required: "Please enter your email address.",
                   validate: {
                     emailConfirm: async (fieldValue) => {
                       const response = await fetch(
@@ -126,7 +126,7 @@ const Register = () => {
                       );
                       let data = await response.json();
                       console.log(data);
-                      return data.length === 0 || "Email is already exists.";
+                      return data.length === 0 || "Please account with this email already exists.";
                     },
                   },
                 })}
@@ -142,7 +142,7 @@ const Register = () => {
                 type={!toggleEye1 ? "password" : "text"}
                 placeholder="Password"
                 {...register("password", {
-                  required: "Password field is required.!!!",
+                  required: "Please enter your account password.!!!",
                   validate: {
                     lessthan8char: (fieldValue) => {
                       return (
@@ -193,7 +193,7 @@ const Register = () => {
                   validate: (fieldValue) => {
                     return (
                       fieldValue === password ||
-                      "Password confirm does not match with password"
+                      "Please confirm your password match."
                     );
                   },
                 })}
