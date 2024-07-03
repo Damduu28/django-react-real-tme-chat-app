@@ -63,6 +63,7 @@ body {
 .error_msg{
     margin-top: 4px;
     color: red;
+    font-size: .85rem;
 }
 
 .chats::-webkit-scrollbar {

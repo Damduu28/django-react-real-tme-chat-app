@@ -77,7 +77,7 @@ const Login = () => {
               type="email"
               placeholder="Enter Email"
               {...register("email", {
-                required: "Email field is required.!!!",
+                required: "Please enter your email address.!!!",
               })}
             />
             <p className="error_msg">{errors.email && errors.email?.message}</p>
@@ -89,7 +89,7 @@ const Login = () => {
                 type={!toggleEye ? "password" : "text"}
                 placeholder="Password"
                 {...register("password", {
-                  required: "Password field is required.!!!",
+                  required: "Please enter your password.!!!",
                   validate: {
                     lessthan8char: (fieldValue) => {
                       return (
