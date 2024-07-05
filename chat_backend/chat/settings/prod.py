@@ -5,7 +5,8 @@ from .base import *
 
 from decouple import config
 
-ALLOWED_HOSTS += ['chatap-backend.vercel.app', '.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['chatap-backend.vercel.app', '.vercel.app', '.now.sh']
+
 DEBUG = False
 
 DATABASES = {
