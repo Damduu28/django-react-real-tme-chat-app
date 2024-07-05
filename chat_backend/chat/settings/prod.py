@@ -26,7 +26,6 @@ CORS_ALLOWED_ORIGINS = [
     ".now.sh",
 ]
 
-
 WHITENOISE_USE_GZIP = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
