@@ -5,7 +5,7 @@ from .base import *
 
 from decouple import config
 
-ALLOWED_HOSTS += ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS += ['chatap-backend.vercel.app', '.vercel.app', '.now.sh']
 DEBUG = False
 
 DATABASES = {
@@ -20,6 +20,7 @@ DATABASES = {
 }
 
 CORS_ALLOWED_ORIGINS = [
+    "chatap-frontend.vercel.app",
     ".vercel.app",
     ".now.sh",
 ]
