@@ -11,7 +11,7 @@ SECRET_KEY = config('SECRET_KEY', default= 'django-insecure-zc5eh^))n7%x_nnsd-a8
 
 INSTALLED_APPS = [
     'daphne',
-    
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
