@@ -9,8 +9,6 @@ from decouple import config
 
 SECRET_KEY = config('SECRET_KEY', default= 'django-insecure-zc5eh^))n7%x_nnsd-a8z8-97+m@rs3&t%g_aok%0z7@c3t#4*')
 
-DEBUG = True
-
 INSTALLED_APPS = [
     'daphne',
     
