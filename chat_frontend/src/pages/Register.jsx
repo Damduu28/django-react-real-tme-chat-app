@@ -60,8 +60,7 @@ const Register = () => {
   }, [password, trigger]);
 
   const onSubmit = (data) => {
-    const formData = data;
-    
+    console.log(data)
     dispatch(signupUser(data)).then((result) => {
       console.log(result)
       if (result.meta.requestStatus ==="fulfilled") {
